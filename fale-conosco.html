@@ -40,7 +40,7 @@
             </header>
         </article>
     </section>
-<form>
+<form method="POST" id="fContato" action="mailto:fabriciosantana@gmail.com">
     <fieldset id="usuario">
         <legend>Identificação do Usuário</legend>
                 <p>Nome:<input type="text" name="tnome" id="cnome" size="30" maxlength="30" placeholder="Nome Completo"> </p>
@@ -57,13 +57,29 @@
         <legend>Endereço do Usuário</legend>
                 <p>Logradouro: <input type="text" name="trua" id="crua" placeholder="rua expedito morais"></p>
                 <p>Número: <input type="number" name="tnum" id="cnum" min="0" max="9999"></p>
-                <p>Estado:</p>
-                <p>Cidade:</p>
+                <p>Estado: <select name="test" id="cest">
+                    <optgroup label="Região sul">
+                        <option value="Rj">Rio de Janeiro</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="MG">Minas Gerais</option>
+                    </optgroup>
+                    <optgroup label="Região Nordeste">
+                        <option value="PE">Pernambuco</option>
+                        <option value="CE">Ceará</option>
+                        <option value="RN">Rio Grande Do Norte</option>
+                    </optgroup>
+                </select></p>
+                <p>Cidade: <input type="text" name="tcid" id="ccid" maxlength="10" placeholder="Sua cidade" list="cidade"></p>
+                <datalist id="cidade">
+                    <option value="Rio de Janeiro"></option>
+                    <option value="Nova Iguaçu"></option>
+                    <option value="Niterói"></option>
+                </datalist>
     </fieldset>
     <fieldset id="mensagem">
         <legend>Mensagem do Usuário</legend>
-                Grau de Urgência:
-                Mensagem:
+                <p>Grau de Urgência: <input type="range" name="turg" id="curg" min="0" max="10" step="2"></p>
+                <p>Mensagem:<textarea name="tmsg" id="cmsg" cols="30" rows="10" placeholder="Digite aqui sua mensagem"></textarea></p>
     </fieldset>
     <fieldset>
         <legend>Quero um Google Glass</legend>
