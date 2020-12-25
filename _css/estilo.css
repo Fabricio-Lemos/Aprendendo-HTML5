@@ -42,7 +42,7 @@ video#filme3 {
 header#cabecalho img#icone {
     position: absolute;
     top: 70px;
-    left: 750px;
+    left: 950px;
 }
 
 header#cabecalho {
@@ -109,7 +109,7 @@ nav#menu ul {
     text-transform: uppercase;
     position: absolute;
     top: -20px;
-    left: 300px;
+    left: 490px;
 }
 
 nav#menu li {
